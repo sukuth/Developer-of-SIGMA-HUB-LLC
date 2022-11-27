@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Developer OF SiGMA_HUB</title>
+    <link rel="icon" type="image/x-icon" href="https://drive.google.com/uc?export=view&id=19iWB3LiYq6IyUJRHcxJlfvik8GDT_s29">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+    .w3-row-padding img {margin-bottom: 12px}
+    /* Set the width of the sidebar to 120px */
+    .w3-sidebar {width: 120px;background: #222;}
+    /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+    #main {margin-left: 120px}
+    /* Remove margins from "page content" on small screens */
+    @media only screen and (max-width: 600px) {#main {margin-left: 0}}
+
+
+  
+.w3-image:hover{
+    color: #111; 
+    background: rgb(47, 255, 64); 
+    box-shadow: 0 0 100px greenyellow; 
+}
+
+.container{
+    width: 100%;
+    padding: 30px 30px 50px;
+    background-color: gray;
+    border: 2px solid rgba(255,255,255,0.06);
+    border-radius: 30px;
+    box-shadow: 0 20px 30px rgba(0,0,0,0.2);
+    backdrop-filter: blur(100px);
+} 
+.container *{
+    font-family: "Poppins",sans-serif;
+    color: black;
+    font-weight: 500;
+}
+.skill-head{
+    margin-bottom: 50px;
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 33px;
+    font-weight: bold;
+}
+.skills:not(:last-child){
+    margin-bottom: 30px;
+}
+.details{
+    width: 100%;
+    display: flex;  
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.bar{
+    position: relative;
+ 
+    border: 2px solid #000000;
+ 
+    border-radius: 20px;
+  
+}
+.bar div{
+    position: relative;
+    width: 0;
+    height: 9px;
+    border-radius: 10px;
+    background-color: #0047fa;
+   
+ 
+}
+#html-bar{
+    animation: html-fill 20s forwards;
+}
+@keyframes html-fill{
+    100%{
+        width: 60%;
+    }
+}
+#css-bar{
+    animation: css-fill 20s forwards;
+}
+@keyframes css-fill{
+    100%{
+        width: 25%;
+    }
+}
+#js-bar{
+    animation: js-fill 20s forwards;
+}
+@keyframes js-fill {
+    100%{
+        width: 0%;
+    }
+}
+#boot-bar{
+    animation: boot-fill 20s forwards;
+}
+@keyframes boot-fill{
+    100%{
+        width: 0%;
+    }
+} 
+    </style>
+  </head>
+<body class="w3-black">
+<div>
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- Avatar image in top left corner -->
+  <img src="https://drive.google.com/uc?export=view&id=19iWB3LiYq6IyUJRHcxJlfvik8GDT_s29" style="width:100%">
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>HOME</p>
+  </a>
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>ABOUT</p>
+  </a>
+  <a href="#team" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-handshake-o w3-xxlarge"></i>
+    <p>TEAM</p>
+  </a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>CONTACT</p>
+  </a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+    <a href="#team" class="w3-bar-item w3-button" style="width:25% !important">TEAM</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+  </div>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+    <h1 class="w3-jumbo"><span class="w3-hide-small"></span> DEVELOPER OF SiGMA_<span style="color:#eab010">HUB</span></h1>
+    <p>Web Developer.</p>
+    <img src="https://drive.google.com/uc?export=view&id=19VIofvsIDHY91rIHxzlGNhAKwQpbzNus" alt="sk developer" class="w3-image" width="992" height="1108">
+  </header>
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 class="w3-text-light-grey">Mr.Sukumar A</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p>I love that we’re constantly pushing the boundaries of what’s possible with web design and development, which means I get to work on both challenging and rewarding projects. That said, I also love that we’re making a real difference in people’s lives and the world at large.</p>
+    <p>Hi, I’m SUKUMAR A. I’m a the person who loves webdevelopment very much.</p>
+
+    <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
+        <div class="shape-1"></div>
+        <div class="shape-2"></div>
+        <div class="container">
+            <h2 class="skill-head">My Skills </h2>
+            <div class="skills">
+                <div class="details">
+                    <span>HTML</span>
+                    <span>60%</span>
+                </div>
+                <div class="bar">
+                    <div id="html-bar"></div>
+                </div>
+            </div>
+            <div class="skills">
+                <div class="details">
+                    <span>CSS</span>
+                    <span>25%</span>
+                </div>
+                <div class="bar">
+                    <div id="css-bar"></div>
+                </div>
+            </div>
+            <div class="skills">
+                <div class="details">
+                    <span>Javascript</span>
+                    <span>0%</span>
+                </div>
+                <div class="bar">
+                    <div id="js-bar"></div>
+                </div>
+            </div>
+            <div class="skills">
+                <div class="details">
+                    <span>Bootstrap</span>
+                    <span>0%</span>
+                </div>
+                <div class="bar">
+                    <div id="boot-bar"></div>
+                </div>
+            </div>
+        </div>
+    </div><br>
+    <!--
+    
+    <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">2+</span><br>
+        Partners
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">5+</span><br>
+        Projects Done
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">20+</span><br>
+        Happy Clients
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">43+</span><br>
+        Meetings
+      </div>
+    </div> -->
+
+    <button class="w3-button w3-light-grey w3-padding-large w3-section">
+      <i class="fa fa-download"></i> Download Resume
+    </button>
+    
+    <!-- Grid for pricing tables -->
+    <h3 class="w3-padding-16 w3-text-light-grey">Our Price</h3>
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half w3-margin-bottom">
+        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">Basic</li>
+          <li class="w3-padding-16">Web Design</li>
+          <li class="w3-padding-16">Logo Design</li>
+          <li class="w3-padding-16">Frontend</li>
+          <li class="w3-padding-16">Mail support</li>
+          <li class="w3-padding-16">
+            <h2>$ 50</h2>
+            <span class="w3-opacity">per month</span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
+          </li>
+        </ul>
+      </div>
+
+      <div class="w3-half">
+        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">Pro</li>
+          <li class="w3-padding-16">Web Design</li>
+          <li class="w3-padding-16">Logo Design</li>
+          <li class="w3-padding-16">Frontend + backend</li>
+          <li class="w3-padding-16">Endless Support</li>
+          <li class="w3-padding-16">
+            <h2>$ 150</h2>
+            <span class="w3-opacity">per month</span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
+          </li>
+        </ul>
+      </div>
+    <!-- End Grid/Pricing tables -->
+    </div>
+    
+    <!-- Testimonials -->
+    <h3 class="w3-padding-24 w3-text-light-grey">Officials</h3>  
+
+    <img src="https://drive.google.com/uc?export=view&id=19WwNxcC7aqxSQlqmwNQCzJpc7JwpaKsm" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <p><span class="w3-large w3-margin-right">Mr.Abdul Hajees</span> CTO of SiGMA_<span style="color:#eab010;">HUB</span></p>
+    <p>Cyber Security and Web Developer of the SiGMA_HUB</p><br>
+
+    <img src="https://drive.google.com/uc?export=view&id=1MDDGJqVR_dPyD9-wxSAArAHwDrBlfvld" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <p><span class="w3-large w3-margin-right">Mr.Kelvin Jose</span> CPM of SiGMA_<span style="color:#eab010;">HUB</span></p>
+    <p>Data Scientist and designer of the SiGMA_HUB</p><br>
+    
+    <img src="https://drive.google.com/uc?export=view&id=1-vAhi9QVuorA4k3T7A2KwerQjePV5P8W" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <p><span class="w3-large w3-margin-right">Mr.Manivel</span> CEO of SiGMA_<span style="color:#eab010;">HUB</span></p>
+    <p>Web developer of the SiGMA_HUB</p></p>
+  <!-- End About Section -->
+  </div>
+  
+  <!-- Portfolio Section -->
+  <div style="padding-left:20%;padding-right:10%;">
+  <div class="w3-padding-64 w3-content" id="team">
+    <h2 class="w3-text-light-grey">My Team</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <!-- Grid for photos -->
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half">
+        <span title="My Team"><img src="https://drive.google.com/uc?export=view&id=1BcDtGRvDzEE789j9qpO-_LpzB7ZxEGY8" style="width:100%"></span>
+        <span title="Mr.KELVIN JOSE"><img src="https://drive.google.com/uc?export=view&id=1MDDGJqVR_dPyD9-wxSAArAHwDrBlfvld" style="width:100%"></span>
+        <span title="Mr.MANIVEL"><img src="https://drive.google.com/uc?export=view&id=1Bwx4JagjDpIDskeG2QrSF0ZBdAZEr3_Q" style="width:100%"></span>
+        <span title="Logo of SIGMA HUB LLC"><img src="https://drive.google.com/uc?export=view&id=1C6uEZ_yp4diJl-bMM7h-6tswPHXiJ04U" style="width:100%">
+        
+      </div>
+      ;                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+      <div class="w3-half">
+        <span title="Mr.ABDUL HAJEES"><img src="https://drive.google.com/uc?export=view&id=1CEvOPkQ4SarIBfwaVsAUCa3Fiz_7LxKy" style="width:100%">
+        <span title="Mr.ARUL KUMARAN"><img src="https://drive.google.com/uc?export=view&id=1zuwnqZGCDx2VPRcYHHKLzioBtOVZCxrP" style="width:100%">
+        <span title="Miss.SUBASHINI"><img src="https://drive.google.com/uc?export=view&id=1C9aV7GAKQpNEtJJGQduECF-YZeuJRYn4" style="width:100%">
+      </div>
+    <!-- End photo grid -->
+    </div>
+  <!-- End Portfolio Section -->
+  </div>
+
+  <!-- Contact Section 1-->
+  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+    <h2 class="w3-text-light-grey">Contact US</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Trichy, Tamil nadu, India</p>
+      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +91 93617 30050</p>
+      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: abdulhajees.s@gmail.com</p>
+    </div><br>
+    <p>Let's get in touch. Send me a message:</p>
+
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form>
+  <!-- End Contact Section 1 -->
+
+  <!-- Contact Section -->
+  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+    <h2 class="w3-text-light-grey">Contact Me</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Trichy, Tamil nadu, India</p>
+      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +91 85267 78980</p>
+      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: sukumarsuku47@gmail.com</p>
+    </div><br>
+
+
+    
+        </button>
+      </p>
+    </form>
+  <!-- End Contact Section -->
+  </div>
+  
+<!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
+<footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+ <p class="w3-small">This website was made by SiGMA_<span style="color:#eab010;">HUB</span></p>
+ <p class="w3-small">© 2022 SiGMA_<span style="color:#eab010">HUB</span>. All rights reserved.</p>
+ <a class="w3-button w3-round-xxlarge w3-small w3-light-grey" href="https://cto-sigmahub.vercel.app/index2.html" target="_blank">Start now</a> 
+ <!-- End footer -->
+</footer>
+
+<!-- END PAGE CONTENT -->
+</div>
+</div>
+</div>
+
+</body>
+</html>
